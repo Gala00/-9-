@@ -1,0 +1,231 @@
+/*Подключаем шрифты*/
+@font-face {
+	font-family: Mont;
+	src: url(Mont-ExtraLightDEMO.otf);
+	}
+@font-face {
+	font-family: MontH;
+	src: url(Mont-HeavyDEMO.otf);
+	}
+/*Свойства флекса*/
+.flex{
+   display:flex;
+   flex-direction:row;
+   justify-content:space-around;
+   align-items:center;
+    }
+.flex-between {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   }
+.flex-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
+   }
+.flex-start {
+   display: flex;
+   flex-direction: row;
+   }
+.flex-start-row{
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   }
+.flex-wrap{
+   display: flex;
+   margin-left:100px;
+   margin-right:100px;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between; 
+   }
+.flex-arrow {
+    display: flex;
+    width:300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    padding-left:553px;
+	padding-bottom:38px;
+	}
+/*Заголовки*/
+h2 {
+   margin-top:30px;
+   
+   font-family: MontH;
+   font-size: 20px;
+   font-weight: 0;
+   color: #272727;
+   }
+/*Поиск*/
+div.order a {
+    text-decoration:none;
+    color: #FFFFFF;
+    font-family:Mont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.89px;
+	}
+ div.serch-block {
+    padding-left:190px;
+    padding-top:75.5px;
+	}
+p {
+    height: 42px;
+    padding-left: 18px;
+	padding-top: 18px;
+	margin: 0;
+    border:none;
+    border-radius: 20px 0px 0px 20px;
+	background: #F8F8F8;
+	text-decoration: none;
+	font-family: Mont;
+    width: 838px;
+	font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+	}
+input.search-bottom {
+   height: 60px;
+   width:199px;
+   border: none;
+   padding: 20px 70px 20px 70px;
+   border-radius: 0px 15px 15px 0px;
+   background: #FEA300;
+   text-decoration: none;
+   font-family: Mont;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 20px;
+   letter-spacing: 0em;
+   color: #FFFFFF;
+   }
+div.order {
+    padding-top: 5px;
+   	text-decoration: none;
+	background-color: #FEA300;
+    width:189px;
+    height:43px;
+    text-align:center;
+	border-radius: 15px;
+ 	cursor:pointer;
+	}
+div.order:hover {
+    box-shadow:0px 0px 5px #533738;
+	}
+/*Узнать */
+.about-fild {
+    padding-top:39px;
+	padding-left:190px;
+    }
+.about-fild-logo {
+    padding-top:183px;
+	padding-left:514px;
+    }
+.about-block {
+    width:1060px;
+    height:180px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 25px 0px #79797926;
+	}
+.about-fild-mob {
+    display: none;
+	}
+.about-sub {
+    margin-left:30px;
+    margin-bottom:30px;
+    margin-right:280px;
+	margin-top:15px;
+	font-family: Mont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    padding-left:20px;
+    padding-right:20px;
+	}
+input {
+    background: url("Search.svg") top left no-repeat;
+    height:30px;
+    padding-left:25px;
+	border: none;
+	}
+
+input:focus {
+	outline: none;
+	box-shadow: 1px 1px 5px white;
+	}
+
+.colortext {
+    color: #F6EDE9;
+	}
+
+::placeholder {
+    font-family: Mont;
+    font-size: 20px;
+	color: #d4d4d4;
+	}
+/*Мобильная версия*/
+@media (max-width : 420px) {
+.about-fild {
+    display: none;
+	}
+.about-fild-mob {
+    display: block;
+	padding-top:40px;
+	padding-left:40px;
+	}
+input.search-bottom {
+     display: none;
+	 }
+p {
+    height: 80px;
+    padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 1px;
+	margin: 0;
+    border:none;
+    border-radius: 20px 20px 20px 20px;
+	background: #F8F8F8;
+	text-decoration: none;
+	font-family: Mont;
+    width: 500px;
+	font-size: 50px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;}
+div.serch-block {
+    padding-left:5px;
+    padding-top:5px;
+	}
+input {
+    background: url("Search.svg") left no-repeat;
+    height:30px;
+    padding-left:30px;
+	padding-top:25px;
+	border: none;
+	}
+div.serch-block {
+    padding-left:0px;
+    padding-top:150px;
+	}
+::placeholder {
+    font-family: Mont;
+    font-size: 30px;
+	color: #d4d4d4;
+	}
+.about-fild-logo {
+    padding-top:300px;
+	padding-left:100px;
+    }
+}
